@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+body {
+  background-color: black;
+}
+
+.upperbox {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upperbox p {
+  color: yellow;
+  margin-bottom: 40px;
+}
+.upperbox .tag {
+  margin-bottom: 10px;
+  font-size: 23px;
+  color: whitesmoke;
+  font-weight: 700;
+}
+.upperbox meter {
+  margin-top: 20px;
+  width: 700px;
+}
+
+.itembox {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  margin-left: 50px;
+}
+.itembox .card1 {
+  height: 12.375rem;
+  border-radius: 20px;
+  width: 30%;
+  background-color: #9bbde0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itembox .card1 span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.itembox .card1 h2 {
+  background-color: #0271e8;
+  color: white;
+  padding: 5px;
+  margin-right: 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.itembox h3 {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.itembox h3:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.itembox meter {
+  margin-top: 20px;
+  width: 200px;
+}
+.itembox .questionbox {
+  transition: 0.5s;
+  height: 400px;
+  width: 40%;
+  background-color: white;
+  color: black;
+  margin-left: 70px;
+  display: flex;
+  border-radius: 22px;
+}
+.itembox .questionbox .question {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.itembox .questionbox .question ol {
+  list-style: none;
+}
+.itembox .questionbox .question ol li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.itembox .questionbox .question ol li p {
+  margin-left: 10px;
+}
+.itembox .questionbox .question ol li p .strike {
+  opacity: 0.3;
+}
+
+.congo-box {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  background-image: url("https://cliply.co/wp-content/uploads/2021/09/CLIPLY_372109170_FREE_FIREWORKS_400.gif");
+}/*# sourceMappingURL=Hero.css.map */
