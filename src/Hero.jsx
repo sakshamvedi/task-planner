@@ -1,7 +1,5 @@
 import {React , useEffect , useState} from 'react'
 import "./Hero.css"
-import {TiTickOutline} from "react-icons/ti";
-import {AiOutlineCheck, AiOutlineSmile} from "react-icons/ai"
 import {IoIosCheckmarkCircleOutline} from "react-icons/io"
 import {RxCrossCircled} from "react-icons/rx"
 function Hero() {
