@@ -60,6 +60,33 @@ body {
   border-radius: 10px;
   font-size: 15px;
 }
+.itembox .card2 {
+  margin-left: 5%;
+  height: 12.375rem;
+  border-radius: 20px;
+  width: 30%;
+  background-color: #FED049;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itembox .card2 span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.itembox .card2 h2 {
+  background-color: #FF7000;
+  color: white;
+  padding: 5px;
+  margin-right: 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  font-size: 15px;
+}
 .itembox h3 {
   background-color: black;
   color: white;
@@ -80,8 +107,12 @@ body {
   width: 200px;
 }
 .itembox .questionbox {
+  position: absolute;
+  top: 5%;
+  left: 20%;
   transition: 0.5s;
   height: 400px;
+  z-index: 10;
   width: 40%;
   background-color: white;
   color: black;
@@ -94,6 +125,21 @@ body {
   flex-direction: column;
   margin-top: 20px;
   margin-left: 20px;
+}
+.itembox .questionbox .question button {
+  background-color: red;
+  border-style: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .itembox .questionbox .question ol {
   list-style: none;
