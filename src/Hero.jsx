@@ -6,6 +6,7 @@ function Hero() {
 const [time, settime] = useState();
 const [toggle, settoggle] = useState(true);
 const [toggle2, settoggle2] = useState(true);
+const [toggle3, settoggle3] = useState(true);
 const [correct, setcorrect] = useState(true);
 const [correct2, setcorrect2] = useState(true);
 const [correct3, setcorrect3] = useState(true);
@@ -14,6 +15,10 @@ const [correct5, setcorrect5] = useState(true);
 const [correct6, setcorrect6] = useState(true);
 const [correct7, setcorrect7] = useState(true);
 const [correct8, setcorrect8] = useState(true);
+const [correct9, setcorrect9] = useState(true);
+const [correct10, setcorrect10] = useState(true);
+const [correct11, setcorrect11] = useState(true);
+const [correct12, setcorrect12] = useState(true);
 const [value, setvalue] = useState(0);
 
 
@@ -35,8 +40,8 @@ const [value, setvalue] = useState(0);
 <div className="upperbox">
     <h1> Happy Working Vidushi !</h1>
     <p>{time}</p>
-    <p className='tag'>{value === 160 ? <>Completed ❤️</> : <>In Progress </>}</p>
-    <meter  min={0}  value  = {value} max = {160}></meter>
+    <p className='tag'>{value === 240 ? <>Completed ❤️</> : <>In Progress </>}</p>
+    <meter  min={0}  value  = {value} max = {240}></meter>
 </div>
 
 <div className="itembox">
@@ -122,7 +127,6 @@ const [value, setvalue] = useState(0);
    }}>Questions ❤️</h3>
    <p style={{background : "white" , padding : "5px" , borderRadius : "9px"}}>Sliding Window</p>
         </div>
-
         {
 
 toggle2 ? <></> : <>
@@ -181,9 +185,78 @@ setvalue(value-20)
 </>
 }
 
+
+<div className="card3">
+            <span>
+   <h2>Data Structure</h2>
+   <p>Array III</p>
+   </span>
+   <h3 onClick={()=>{
+    settoggle3(!toggle3)
+   }}>Questions ❤️</h3>
+   <p style={{background : "white" , padding : "5px" , borderRadius : "9px"}}>Merge Intervals</p>
+        </div>
+        {
+
+toggle3 ? <></> : <>
+<div className="questionbox">
+<div className="question">
+<button onClick={()=>{
+    settoggle3(!toggle3);
+}}>Close</button>
+<p>Learn about Merge Intervals</p>
+<ol>
+<li>{correct9 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect9(!correct9)
+setvalue(value+20);
+}} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
+setcorrect9(!correct9)
+setvalue(value-20)
+}}/>}
+<p> { correct9 ?   <>Learn and Study How Merge Intervals Works</> : <strike className = "strike">Learn and Study How Sliding Window Algortihm Works</strike> }</p>
+</li>
+<li>{correct10 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect10(!correct10)
+setvalue(value+20);
+}} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
+setcorrect10(!correct10)
+setvalue(value-20)
+}}/>}
+<p> { correct10 ?   <> Merge overlapping Intervals <a href = "https://www.geeksforgeeks.org/merging-intervals/">Link</a>
+</> : <strike className = "strike"> Merge overlapping Intervals <a href = "https://www.geeksforgeeks.org/merging-intervals/">Link</a> 
+</strike> }</p>
+</li>
+<li>{correct11 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect11(!correct11)
+setvalue(value+20);
+}} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
+setcorrect11(!correct11)
+setvalue(value-20)
+}}/>}
+<p> { correct11 ?   <>Leetcode 511. Insert Intervals</> : <strike className = "strike">Leetcode 57. Insert Intervals</strike> }</p>
+</li>
+<li>{correct12 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect12(!correct12)
+setvalue(value+20);
+}} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
+setcorrect12(!correct12)
+setvalue(value-20)
+}}/>}
+<p> { correct12 ?   <>Leetcode 986 Intervals List Interaction 
+</> : <strike className = "strike">Leetcode 986 Intervals List Interaction 
+</strike> }</p>
+</li>
+
+</ol>
+
+</div>
+</div>
+</>
+}
+
 </div>
 {
-    value=== 160 ? <div className="congo-box">
+    value=== 240 ? <div className="congo-box">
     
     </div>
 :<>
