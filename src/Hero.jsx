@@ -7,6 +7,7 @@ const [time, settime] = useState();
 const [toggle, settoggle] = useState(true);
 const [toggle2, settoggle2] = useState(true);
 const [toggle3, settoggle3] = useState(true);
+const [toggle4, settoggle4] = useState(true);
 const [correct, setcorrect] = useState(true);
 const [correct2, setcorrect2] = useState(true);
 const [correct3, setcorrect3] = useState(true);
@@ -19,6 +20,10 @@ const [correct9, setcorrect9] = useState(true);
 const [correct10, setcorrect10] = useState(true);
 const [correct11, setcorrect11] = useState(true);
 const [correct12, setcorrect12] = useState(true);
+const [correct13, setcorrect13] = useState(true);
+const [correct14, setcorrect14] = useState(true);
+const [correct15, setcorrect15] = useState(true);
+const [correct16, setcorrect16] = useState(true);
 const [value, setvalue] = useState(0);
 
 
@@ -253,6 +258,78 @@ setvalue(value-20)
 </div>
 </>
 }
+
+
+
+<div className="card4">
+            <span>
+   <h2>Data Structure</h2>
+   <p>Algo+ </p>
+   </span>
+   <h3 onClick={()=>{
+    settoggle3(!toggle3)
+   }}>Questions ❤️</h3>
+   <p style={{background : "white" , padding : "5px" , borderRadius : "9px"}}>Fast and Slow Pointers</p>
+        </div>
+        {
+
+toggle3 ? <></> : <>
+<div className="questionbox">
+<div className="question">
+<button onClick={()=>{
+    settoggle3(!toggle3);
+}}>Close</button>
+<p>Learn about Fast and Slow Pointers</p>
+<ol>
+<li>{correct9 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect9(!correct9)
+setvalue(value+20);
+}} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
+setcorrect9(!correct9)
+setvalue(value-20)
+}}/>}
+<p> { correct9 ?   <>Learn and Study How Fast and slow pointer Works</> : <strike className = "strike">Learn and Study How Fast and slow pointer Works</strike> }</p>
+</li>
+<li>{correct10 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect10(!correct10)
+setvalue(value+20);
+}} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
+setcorrect10(!correct10)
+setvalue(value-20)
+}}/>}
+<p> { correct10 ?   <> Leetcode 202 . Happy Numbers 
+</> : <strike className = "strike"> Leetcode 202 . Happy Numbers  
+</strike> }</p>
+</li>
+<li>{correct11 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect11(!correct11)
+setvalue(value+20);
+}} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
+setcorrect11(!correct11)
+setvalue(value-20)
+}}/>}
+<p> { correct11 ?   <>Leetcode 141. Linked List Cycle </> : <strike className = "strike">Leetcode 141. Linked List Cycle </strike> }</p>
+</li>
+<li>{correct12 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect12(!correct12)
+setvalue(value+20);
+}} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
+setcorrect12(!correct12)
+setvalue(value-20)
+}}/>}
+<p> { correct12 ?   <>Middle of the Linked List 
+</> : <strike className = "strike">Middle of the Linked List 
+</strike> }</p>
+</li>
+
+</ol>
+
+</div>
+</div>
+</>
+}
+
+
 
 </div>
 {
