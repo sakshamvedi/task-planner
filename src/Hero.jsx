@@ -45,8 +45,8 @@ const [value, setvalue] = useState(0);
 <div className="upperbox">
     <h1> Happy Working Vidushi !</h1>
     <p>{time}</p>
-    <p className='tag'>{value === 240 ? <>Completed ❤️</> : <>In Progress </>}</p>
-    <meter  min={0}  value  = {value} max = {240}></meter>
+    <p className='tag'>{value === 320 ? <>Completed ❤️</> : <>In Progress </>}</p>
+    <meter  min={0}  value  = {value} max = {320}></meter>
 </div>
 
 <div className="itembox">
@@ -267,57 +267,57 @@ setvalue(value-20)
    <p>Algo+ </p>
    </span>
    <h3 onClick={()=>{
-    settoggle3(!toggle3)
+    settoggle4(!toggle4)
    }}>Questions ❤️</h3>
    <p style={{background : "white" , padding : "5px" , borderRadius : "9px"}}>Fast and Slow Pointers</p>
         </div>
         {
 
-toggle3 ? <></> : <>
+toggle4 ? <></> : <>
 <div className="questionbox">
 <div className="question">
 <button onClick={()=>{
-    settoggle3(!toggle3);
+    settoggle4(!toggle4);
 }}>Close</button>
 <p>Learn about Fast and Slow Pointers</p>
 <ol>
-<li>{correct9 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
-setcorrect9(!correct9)
+<li>{correct13 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect13(!correct13)
 setvalue(value+20);
 }} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
-setcorrect9(!correct9)
+setcorrect13(!correct13)
 setvalue(value-20)
 }}/>}
-<p> { correct9 ?   <>Learn and Study How Fast and slow pointer Works</> : <strike className = "strike">Learn and Study How Fast and slow pointer Works</strike> }</p>
+<p> { correct13 ?   <>Learn and Study How Fast and slow pointer Works</> : <strike className = "strike">Learn and Study How Fast and slow pointer Works</strike> }</p>
 </li>
-<li>{correct10 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
-setcorrect10(!correct10)
+<li>{correct14 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect14(!correct14)
 setvalue(value+20);
 }} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
-setcorrect10(!correct10)
+setcorrect14(!correct14)
 setvalue(value-20)
 }}/>}
-<p> { correct10 ?   <> Leetcode 202 . Happy Numbers 
+<p> { correct14 ?   <> Leetcode 202 . Happy Numbers 
 </> : <strike className = "strike"> Leetcode 202 . Happy Numbers  
 </strike> }</p>
 </li>
-<li>{correct11 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
-setcorrect11(!correct11)
+<li>{correct15 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect15(!correct15)
 setvalue(value+20);
 }} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
-setcorrect11(!correct11)
+setcorrect15(!correct15)
 setvalue(value-20)
 }}/>}
-<p> { correct11 ?   <>Leetcode 141. Linked List Cycle </> : <strike className = "strike">Leetcode 141. Linked List Cycle </strike> }</p>
+<p> { correct15 ?   <>Leetcode 141. Linked List Cycle </> : <strike className = "strike">Leetcode 141. Linked List Cycle </strike> }</p>
 </li>
-<li>{correct12 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
-setcorrect12(!correct12)
+<li>{correct16 ?<  IoIosCheckmarkCircleOutline size={30} color = {"green"}   onClick = {()=>{
+setcorrect16(!correct16)
 setvalue(value+20);
 }} /> : <RxCrossCircled size={30} color = {"red"}  onClick = {()=>{
-setcorrect12(!correct12)
+setcorrect16(!correct16)
 setvalue(value-20)
 }}/>}
-<p> { correct12 ?   <>Middle of the Linked List 
+<p> { correct16 ?   <>Middle of the Linked List 
 </> : <strike className = "strike">Middle of the Linked List 
 </strike> }</p>
 </li>
@@ -333,7 +333,7 @@ setvalue(value-20)
 
 </div>
 {
-    value=== 240 ? <div className="congo-box">
+    value=== 320 ? <div className="congo-box">
     
     </div>
 :<>
